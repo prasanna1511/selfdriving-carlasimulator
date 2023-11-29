@@ -174,7 +174,7 @@ class PIDLateralController:
         steering = -(self._k_p * cross_track_error) - (self._k_d * derivative) - (self._k_i * integral)
         
         steering = steering * self._get_steering_direction(v1, v2)
-
+       
         # if(steering>0.5):
         #     steering = 0.5
 
