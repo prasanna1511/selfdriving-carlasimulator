@@ -1,0 +1,6 @@
+numpy
+pygame
+pytest
+pyYAML
+matplotlib
+carla

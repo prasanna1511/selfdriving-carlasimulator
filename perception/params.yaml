@@ -1,0 +1,63 @@
+# Parameters
+
+# trajectory to follow
+waypoints_file: ./results/recorded_trajectory.txt
+
+# Sampling Time
+sampling_time: 0.05
+ 
+model:
+  L: 2.7
+
+# Controller related parameters
+control:
+
+  strategy: stanley # pid/pure-pursuit/stanley/mpc
+ 
+  # Actuation 
+  max_throttle: 0.75
+  max_brake : 0.3
+  max_steering : 0.8
+   
+  # Longitudinal controller  
+  longitudinal:
+
+    pid:
+      K_P: 3.6
+      K_D: 0.04
+      K_I: 0.7
+
+  # Lateral controller
+  lateral:     
+
+    pid:
+      K_P: 0.13
+      K_D: 0.13
+      K_I: 0.01
+    
+    
+    pure-pursuit:
+     ld: 5.0
+     K_pp: 0.3
+  
+    stanley:
+      K_cte: 2.0
+
+planning:
+  max_len: 20.0
+  min_distance: 2.0
+  hop_resolution: 1.0
+  speed_limit: 50.0
+
+  lookahead_time: 2.0
+  local_resolution: 0.5
+
+  start: [6.1, 184.3, 1.0]
+  end: [19.2, -197.0, 0.0] 
+  scenario: "scenario2"
+
+perception:
+  start: [230, -5.4, 1]
+  end: [91, -181.0, 1.0] 
+  scenario: "scenario3"
+

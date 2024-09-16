@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: sdc
+Version: 0.1
+Requires-Dist: numpy
+Requires-Dist: pygame
+Requires-Dist: pytest
+Requires-Dist: pyYAML
+Requires-Dist: matplotlib
+Requires-Dist: carla
