@@ -1,6 +1,4 @@
-## Carla Simulator Control, Planning, and Perception
-
-This repository contains implementations for vehicle control, planning, and perception tasks using the CARLA simulator.
+## Carla Simulator Control, Planning, Perception with and without agents 
 
 1. Control
 2. Planning
@@ -29,3 +27,4 @@ Perception involves interpreting the environment to make real-time driving decis
 - **Traffic Sign Recognition:** 
 - **Speed Limit and Turn Detection:** 
 - bounding boxes
+- agents detection, obstacle avoidance
